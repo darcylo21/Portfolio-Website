@@ -1,32 +1,144 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', system-ui, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f9fa;
-  color: #222;
+  background: #7bb394;
+  color: #232527;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.navbar {
+  background: #497e58;
+  padding: 0;
+  border-bottom: 1px solid #232527;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-links li a {
+  color: #f6f7f9;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.2s;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.nav-links li a:hover {
+  color: #4f8cff;
+  background: rgba(255,255,255,0.08);
 }
 
 .hero {
-  background: #4f8cff;
-  color: #fff;
-  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 10px 20px 10px;
+  background: none;
+  min-height: 180px;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #232527 url('https://placehold.co/120x120?text=Avatar') center/cover no-repeat;
+  border: 3px solid #4f8cff;
+  margin-bottom: 18px;
+}
+
+h1 {
+  margin: 0 0 6px 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #232527;
+  letter-spacing: -1px;
   text-align: center;
 }
 
-.bio, .skills {
-  background: #fff;
-  margin: 20px auto;
-  padding: 24px 20px;
-  max-width: 600px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+.hero p {
+  margin: 0 0 6px 0;
+  color: #497e58;
+  font-size: 1.1em;
+  text-align: center;
 }
 
-h1, h2 {
+.bio, .skills, .contact {
+  background: #f6f7f9;
+  color: #232527;
+  margin: 16px auto;
+  padding: 20px 18px;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  border: 1px solid #e0e4e7;
+}
+
+h2 {
   margin-top: 0;
+  color: #4f8cff;
+  font-weight: 600;
+  font-size: 1.3em;
 }
 
 .skills ul {
   list-style-type: disc;
   padding-left: 20px;
+  margin: 0;
 }
+
+.contact a {
+  color: #4f8cff;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 100vw;
+    padding: 0 4vw;
+  }
+  .bio, .skills, .contact {
+    max-width: 98vw;
+    padding: 14px 4vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .bio, .skills, .contact {
+    padding: 10px 2vw;
+    max-width: 99vw;
+  }
+  .container {
+    padding: 0 2vw;
+  }
+  .hero {
+    padding: 18px 2vw 10px 2vw;
+  }
+}
+
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
