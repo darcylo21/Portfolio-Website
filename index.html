@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for character encoding and responsive design -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Portfolio</title>
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome CDN for skill icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+  <!-- Navigation bar at the top of the page -->
   <nav class="navbar">
     <div class="container">
+      <!-- Navigation links centered in the navbar -->
       <ul class="nav-links">
         <li><a href="#bio">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -17,31 +23,50 @@
     </div>
   </nav>
 
+  <!-- Hero section with avatar and introduction -->
   <header class="hero">
-    <div class="avatar"></div>
+    <div class="avatar">
+      <!-- Avatar image (replace src with your image if needed) -->
+      <img src="img/domo4.png" alt="Avatar" />
+    </div>
     <h1>Welcome to My Portfolio</h1>
     <p>Web Development Student</p>
   </header>
 
+  <!-- About Me section -->
   <section class="bio" id="bio">
     <h2>About Me</h2>
+    <!-- Removed About Me section image -->
     <p>
       Hi! I'm a web development student learning to build awesome websites. This is my portfolio where I'll showcase my projects as I learn and grow.
     </p>
   </section>
 
+  <!-- Skills section -->
   <section class="skills" id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (learning)</li>
-    </ul>
+    <!-- Skills displayed horizontally and centered, with text under icons -->
+    <div class="skills-list">
+      <div class="skill-item">
+        <i class="fa-brands fa-html5 skill-icon"></i>
+        <span>HTML</span>
+      </div>
+      <div class="skill-item">
+        <i class="fa-brands fa-css3-alt skill-icon"></i>
+        <span>CSS</span>
+      </div>
+      <div class="skill-item">
+        <i class="fa-brands fa-js skill-icon"></i>
+        <span>JavaScript (learning)</span>
+      </div>
+    </div>
   </section>
 
+  <!-- Contact section -->
   <section class="contact" id="contact">
     <h2>Contact</h2>
     <p>
+      <!-- Email link for contacting -->
       You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>
     </p>
   </section>
