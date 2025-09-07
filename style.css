@@ -1,6 +1,9 @@
+/* Import Roboto Mono font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap');
+
 /* Set up base font, background, and text color for the whole page */
 body {
-  font-family: 'Saira Condensed', Arial, sans-serif;
+  font-family: 'Roboto Mono', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: #b3d3c1; /* Light green background */
@@ -19,7 +22,6 @@ body {
 .navbar {
   background: #497e58; /* Darker green */
   padding: 0;
-  border-bottom: 1px solid #232527;
 }
 
 /* Center navbar content vertically and horizontally */
@@ -132,8 +134,8 @@ h1 {
 .bio, .skills, .contact {
   background: #4f8dffa4;
   color: #232527;
-  margin: 24px auto;
-  padding: 50px 70px;
+  margin: 55px auto; /* Increased from 24px to 55px */
+  padding: 50px 90px;
   max-width: 1000px;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
@@ -145,7 +147,7 @@ h2 {
   margin-top: 0;
   color: #297250;
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -233,6 +235,3 @@ h2 {
     padding: 18px 2vw 10px 2vw;
   }
 }
-
-/* Import Saira Condensed font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;600;700&display=swap');
