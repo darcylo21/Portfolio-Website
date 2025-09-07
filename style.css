@@ -130,21 +130,23 @@ h1 {
 
 /* Card-like section styles for bio, skills, and contact */
 .bio, .skills, .contact {
-  background: #497e58a6; /* Darker green */
+  background: #4f8dffa4;
   color: #232527;
   margin: 24px auto;
-  padding: 40px 32px;
-  max-width: 900px;
+  padding: 50px 70px;
+  max-width: 1000px;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  text-align: center;
 }
 
 /* Section headings */
 h2 {
   margin-top: 0;
-  color: #c9ffe6;   
+  color: #297250;
   font-weight: 600;
   font-size: 1.3em;
+  text-align: center;
 }
 
 /* Skills list styles */
@@ -174,9 +176,9 @@ h2 {
 
 /* Make the skill icons much larger */
 .skill-icon {
-  font-size: 3em;
+  font-size: 5em;
   margin-bottom: 6px;
-  color: #3eaa78;
+  color: #297250;
 }
 
 /* Make the skill label smaller */
